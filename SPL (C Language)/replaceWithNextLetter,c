@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+    char str1[50];
+    printf("Enter a string: ");
+    gets(str1);
+
+    for(int i=0; str1[i] != '\0'; i++)
+    {
+        if(isalpha(str1[i]))
+        if(str1[i]=='a' || str1[i]=='e' || str1[i]=='i' || str1[i]=='o' || str1[i]=='u' || str1[i]=='A' || str1[i]=='E' || str1[i]=='I' || str1[i]=='O' || str1[i]=='U')
+        {
+        }
+        else
+        {
+            if(str1[i]=='Z')
+            str1[i]='A';
+            else if(str1[i]=='z')
+            str1[i]='a';
+            else
+            str1[i]+=1;
+        }
+    }
+
+    printf("New : %s", str1);
+
+    return 0;
+}
