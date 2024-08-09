@@ -1,10 +1,15 @@
-public class Circle extends Shape {
+package Abstract;
 
-    public Circle(int dim1){
-        super(dim1);
+public class Circle extends Shape{
+    double r;
+    public Circle(double dim1, double dim2) {
+        super(dim1, dim2);
+        r = dim1 = dim2 ;
     }
-    public void printArea(){
-        double areaa= 3.14*dim1*dim1;
-        System.out.println("Area of Circle : "+areaa);
+
+    @Override
+    void area() {
+        double area = 3.1416 * r * r;
+        System.out.println("Area of Circle : "+area+" sq meter");
     }
 }
