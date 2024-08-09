@@ -1,16 +1,15 @@
-abstract class Shape {
-    int dim1;
-    int dim2;
+package Abstract;
 
-    Shape(int dim1)
-    {
-        this.dim1 = dim1;
-    }
+public abstract class Shape {
 
-    public Shape(int dim1, int dim2) {
+    double dim1, dim2;
+
+    public Shape(double dim1, double dim2) {
         this.dim1 = dim1;
         this.dim2 = dim2;
     }
 
-    public abstract void printArea();
+    abstract void area ();
+
+    void testing() {}; // Non abstract method is not a must implementation thing
 }
