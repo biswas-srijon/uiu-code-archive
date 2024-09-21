@@ -32,18 +32,21 @@ class Tiger extends Animal{
         super(name, color);
     }
     @Override
-    public void makeSound() { System.out.println("Roar"); }
-    public void methodTiger() { System.out.println("methodTiger"); }
+    public void makeSound() {
+        System.out.println("Roar");
+    }
+    public void methodTiger() { 
+        System.out.println("This is concreate method of Tiger class");
+    }
 }
 public class TestAnimal {
     public static void main(String[] args) {
         Bird b = new Bird("Bird","Green");
-        Animal t = new Tiger("Tiger","Black");
+        Tigerl t = new Tiger("Tiger","Black");
         b.eat();
         t.eat();
         b.makeSound();
         t.makeSound();
-
-
+        t.methodTiger();
     }
 }
