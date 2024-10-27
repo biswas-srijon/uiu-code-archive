@@ -17,7 +17,7 @@ public class MyCalculator implements ActionListener {
     JButton bt1, bt2, bt3, bt4, bt5;
     JLabel label1, label2, label3;
     JTextField tx1, tx2, tx3;
-    int num1, num2, res = 0;
+    double num1, num2, res = 0;
 
     public MyCalculator() {
         fr = new JFrame();
@@ -135,27 +135,28 @@ public class MyCalculator implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
         if(e.getSource()==bt1) {
-            res = Integer.parseInt(tx1.getText()) + Integer.parseInt(tx2.getText());
+            res = Double.parseDouble(tx1.getText()) + Double.parseDouble(tx2.getText());
             String str = String.valueOf(res);
-            tx3.setText(str);
+            //tx3.setText(str);
+            tx3.setText(String.format("%.2f", res));
         }
 
         else if(e.getSource()==bt2) {
-            res = Integer.parseInt(tx1.getText()) - Integer.parseInt(tx2.getText());
+            res = Double.parseDouble(tx1.getText()) - Double.parseDouble(tx2.getText());
             String str = String.valueOf(res);
-            tx3.setText(str);
+            tx3.setText(String.format("%.2f", res));
         }
 
         else if(e.getSource()==bt3) {
-            res = Integer.parseInt(tx1.getText()) * Integer.parseInt(tx2.getText());
+            res = Double.parseDouble(tx1.getText()) * Double.parseDouble(tx2.getText());
             String str = String.valueOf(res);
-            tx3.setText(str);
+            tx3.setText(String.format("%.2f", res));
         }
 
         else if(e.getSource()==bt4) {
-            res = Integer.parseInt(tx1.getText()) / Integer.parseInt(tx2.getText());
+            res = Double.parseDouble(tx1.getText()) / Double.parseDouble(tx2.getText());
             String str = String.valueOf(res);
-            tx3.setText(str);
+            tx3.setText(String.format("%.2f", res));
         }
 
         else if(e.getSource()==bt5) {
