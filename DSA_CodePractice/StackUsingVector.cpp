@@ -34,7 +34,6 @@ class Stack {
         return v.empty();
     }
 
-    //Print Function
     void printStack(){
         for (int val : v) {
             cout << val << " ";
