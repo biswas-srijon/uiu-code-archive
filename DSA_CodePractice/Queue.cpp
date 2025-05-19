@@ -1,4 +1,5 @@
 #include<iostream>
+#include<deque>
 using namespace std;
 
 
@@ -62,9 +63,23 @@ class Queue {
 };
 
 
-
-
 int main(){
+
+    // //doible ending queue using c++ stl
+    // deque <int> dq;
+
+    // dq.push_back(2);
+    // dq.push_back(3);
+    // dq.push_back(4);
+
+    // dq.push_front(1);
+
+    // cout << dq.front() << " " << dq.back() << endl;
+
+    // dq.pop_back();
+
+    // cout << dq.front() << " " << dq.back() << endl;
+
 
     Queue q;
 

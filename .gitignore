@@ -1,0 +1,9 @@
+# Ignore all .exe files
+*.exe
+
+# Optional: ignore temporary/system files
+*.class
+*.out
+*.o
+*.log
+.DS_Store
