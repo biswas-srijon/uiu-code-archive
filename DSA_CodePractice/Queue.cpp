@@ -57,7 +57,7 @@ class Queue {
     }
 
     bool empty(){
-        return head == NULL;
+        return head == NULL; //returns true if this matches
     }
 
 };
